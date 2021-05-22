@@ -1,0 +1,10 @@
+<% layout('layouts/boilerplate')%>
+
+    <h1>BlogPosts</h1>
+    <%for(let blog of blogposts){ %>
+        <h3>
+            <a href="<%= blog.id %>">
+                <%= blog.title %>
+            </a>
+        </h3>
+        <% } %>

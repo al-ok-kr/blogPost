@@ -1,0 +1,13 @@
+<% layout('layouts/boilerplate')%>
+    <h1>
+        <%= blog.title %>
+    </h1>
+    <h2>
+        <%= blog.content %>
+    </h2>
+    <a href="<%= blog._id %>/edit">Edit Blog</a>
+    <p>
+    <form action="/<%= blog._id %>/delete?_method=DELETE" method="POST">
+        <button>Delete</button>
+    </form>
+    </p>
